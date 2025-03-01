@@ -103,3 +103,43 @@ If you close the terminal, the app will stop. To keep it running in the backgrou
 
 ```sh
 nohup streamlit run app.py --server.port 8501 --server.address 0.0.0.0 > output.log 2>&1 &
+```
+
+# Understanding Ports in Networking
+
+A **port** is a logical endpoint in a computer network where communication between devices or services occurs. It helps direct data to the correct application or service on a device (like a server or computer).
+
+When you send or receive data over the internet, it's not just the **IP address** that matters — the **port number** helps identify which specific service or application on that device should handle the data.
+
+## Example of Ports in Use:
+
+- **HTTP** (used for web browsing) typically uses **port 80**.
+- **HTTPS** (secure web browsing) typically uses **port 443**.
+- **Streamlit apps** by default often use **port 8501**.
+- **SSH** (used to securely connect to servers) uses **port 22**.
+
+## Ports in Networking
+
+Ports are part of the **Transmission Control Protocol (TCP)** and **User Datagram Protocol (UDP)**. They allow multiple services to run on the same device using different port numbers, so the device knows which application the data is meant for.
+
+## How Ports Work:
+
+Think of it like this:
+Imagine your computer is a large building. The **IP address** is the street address, and each **port** is a specific room in that building. When someone wants to send data to you (or a service on your computer), they send it to the building (IP address) and to a specific room (port) where the service is running.
+
+## Common Port Numbers:
+
+- **22**: SSH (used for secure shell access)
+- **80**: HTTP (used for regular web traffic)
+- **443**: HTTPS (used for secure web traffic)
+- **8501**: Streamlit (default port for Streamlit apps)
+
+---
+
+## Example: Ports in AWS EC2 with Streamlit
+
+In your case, when you set up **Streamlit** on an **AWS EC2** instance, you're opening **port 8501** to allow users to access the Streamlit app via the web.
+
+
+
+
