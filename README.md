@@ -25,6 +25,10 @@ Follow these steps to deploy your Streamlit app on an AWS EC2 instance.
     ```sh
     ssh -i your-key.pem ubuntu@your-ec2-public-ip
     ```
+   or the following for my case:
+    ```sh
+   ssh -i ~/ssh/ec2-key.pem ec2-user@3.8.143.49
+    ```
 
 2. Once connected, update the system:
 
@@ -64,7 +68,12 @@ From your local machine, run:
 
 ```sh
 scp -i your-key.pem your_streamlit_app.py ubuntu@your-ec2-public-ip:~
+```
+or the following for my case:
+```sh
+scp -i ~/ssh/ec2-key.pem /Users/lowchinchern/source/aws-ec2/app.py ec2-user@3.8.143.49:~
 
+```
 
 ## 🛠️ Step 5: Run Streamlit
 
@@ -76,11 +85,6 @@ scp -i your-key.pem your_streamlit_app.py ubuntu@your-ec2-public-ip:~
 
    The `server.address=0.0.0.0` ensures it’s accessible from the internet.
 
-2. If you encounter an error about `protobuf`, run this command:
-
-    ```sh
-    pip install --upgrade protobuf
-    ```
 
 ---
 
