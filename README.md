@@ -193,4 +193,32 @@ When you visit a website, for example, your computer or device sends a request t
 An **IP address** is like your **home address** in a city. When someone wants to send you a letter (data), they need your address (IP address) to know where to send it. Similarly, when you're browsing the web, websites need your **IP address** to send information back to your device.
 
 
+# Web Application Access
+
+This document explains the different ways to access the web application based on the URL types provided. You can use these URLs to access the app on different networks.
+
+## URLs:
+
+### 1. **Local URL**
+   - **URL**: `http://localhost:8501`
+   - **Description**: This URL is used to access the application **only on the local machine** where it's running. "localhost" refers to the local computer, so only the developer or user of that machine can access the app through this URL.
+   - **Use Case**: Typically used in development environments to test or preview an app locally.
+
+### 2. **Network URL**
+   - **URL**: `http://172.31.22.117:8501`
+   - **Description**: This URL uses an **internal network IP address** and can be accessed by anyone connected to the same local network (Wi-Fi or LAN) as the host machine. The IP address `172.31.22.117` is within the private IP address range, meaning it’s accessible only within the local network.
+   - **Use Case**: Use this URL to allow others on the same network (e.g., co-workers, team members) to access the app.
+
+### 3. **External URL**
+   - **URL**: `http://3.8.143.49:8501`
+   - **Description**: This is an **external or public IP address**. The app can be accessed from anywhere over the internet, provided that the necessary port (8501) is open, and the firewall allows external traffic.
+   - **Use Case**: Share this URL with others outside your local network to give them access to the app via the internet. This is commonly used for testing or public deployment.
+
+## Key Differences:
+- **Local URL**: Accessible only from the local machine running the app.
+- **Network URL**: Accessible from other devices on the same local network (Wi-Fi or LAN).
+- **External URL**: Accessible from anywhere over the internet.
+
+---
+
 
