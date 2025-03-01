@@ -140,6 +140,57 @@ Imagine your computer is a large building. The **IP address** is the street addr
 
 In your case, when you set up **Streamlit** on an **AWS EC2** instance, you're opening **port 8501** to allow users to access the Streamlit app via the web.
 
+# Understanding IP Addresses
+
+An **IP address** (Internet Protocol address) is a unique identifier assigned to each device connected to a computer network that uses the Internet Protocol for communication. It is used to identify and locate devices on the network, allowing them to communicate with each other.
+
+## Two Types of IP Addresses:
+
+### 1. **IPv4 (Internet Protocol version 4):**
+
+- This is the most commonly used version of IP addresses.
+- It consists of four sets of numbers (each between 0 and 255) separated by dots.
+- Example: `192.168.0.1`
+
+### 2. **IPv6 (Internet Protocol version 6):**
+
+- This is a newer version of IP addresses, designed to replace IPv4 because of the limited number of addresses available in IPv4.
+- IPv6 addresses are longer and use hexadecimal (base 16) numbers.
+- Example: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+
+---
+
+## Purpose of an IP Address:
+
+- **Unique Identification:** Every device on a network (such as a computer, phone, or server) needs a unique IP address to communicate with other devices.
+- **Location Addressing:** It serves as the location or address for the device on the internet or local network, similar to how a street address helps identify a house.
+- **Routing:** It helps direct data to the correct device. When you send a request (e.g., opening a website), your IP address helps route the response to the correct device.
+
+---
+
+## Types of IP Addresses:
+
+### 1. **Public IP Address:**
+
+- A **public IP address** is used to identify devices on the internet. It is assigned by your Internet Service Provider (ISP).
+- Example: `203.0.113.45`
+
+### 2. **Private IP Address:**
+
+- A **private IP address** is used within a local network, such as your home or office. Devices within the same local network can communicate with each other using private IP addresses.
+- Example: `192.168.1.1`
+
+---
+
+## How IP Addresses Work:
+
+When you visit a website, for example, your computer or device sends a request to the server hosting the website, using its **IP address**. The server then sends the data (the webpage) back to your device using your **IP address**, ensuring that the data reaches the correct device.
+
+---
+
+## Think of it like this:
+
+An **IP address** is like your **home address** in a city. When someone wants to send you a letter (data), they need your address (IP address) to know where to send it. Similarly, when you're browsing the web, websites need your **IP address** to send information back to your device.
 
 
 
